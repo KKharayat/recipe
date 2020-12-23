@@ -16,11 +16,12 @@ import Button from "react-bootstrap/Button";
 const App = () => {
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [recipesPerPage] = useState(9);
   const [error, setError] = useState(false);
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState("fish");
-  const [currentPage, setCurrentPage] = useState(1);
-  const [recipesPerPage] = useState(9);
+
   let currentRecipes = [];
 
   useEffect(() => {
@@ -58,6 +59,7 @@ const App = () => {
 
   // Change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   let display = (
     <Container fluid>
       <Row className="justify-content-center mt-3">
