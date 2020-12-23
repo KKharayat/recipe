@@ -96,7 +96,7 @@ const App = () => {
   return (
     <>
       <Navbar bg="dark" variant="dark">
-        <Navbar.Brand className="d-none d-sm-block">Recipepidea</Navbar.Brand>
+        <Navbar.Brand className="d-none d-sm-block">Recipedia</Navbar.Brand>
         <Form className="ml-auto" inline onSubmit={getSearch}>
           <InputGroup>
             <FormControl
