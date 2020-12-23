@@ -24,7 +24,7 @@ const App = () => {
   let currentRecipes = [];
 
   useEffect(() => {
-    const fetchRecipes = async () => {
+    const getRecipes = async () => {
       setLoading(true);
       try {
         const res = await axios.get(
@@ -38,7 +38,7 @@ const App = () => {
       }
     };
 
-    fetchRecipes();
+    getRecipes();
   }, [query]);
 
   const updateSearch = (e) => {
