@@ -108,7 +108,9 @@ const App = () => {
               value={search}
               onChange={updateSearch}
             />
-            <Button variant="outline-info">Search</Button>
+            <Button variant="outline-info" onClick={getSearch}>
+              Search
+            </Button>
           </InputGroup>
         </Form>
       </Navbar>
